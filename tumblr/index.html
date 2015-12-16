@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{Title}</title>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Font Face --> 
+<link href="http://cloud.webtype.com/css/2ebe6d20-6380-420e-a3c8-7a19f4a641e2.css" rel="stylesheet" type="text/css" />
+
+<style>
+
+  /* fonts */
+
+  @font-face {
+    font-family: "Titling Gothic FB Cond";
+    src: url("//cloud.webtype.com/webtype/ff/2/917871f8-6cec-46a5-8329-65583e05f073");
+    src:  url("//cloud.webtype.com/webtype/ff/2/917871f8-6cec-46a5-8329-65583e05f073#iefix")  format("embedded-opentype"),
+    url("//cloud.webtype.com/webtype/ff/1/15a8aa74-d5e3-4714-b0cc-20f345a5e301") format("truetype"),
+    url("//cloud.webtype.com/webtype/ff/3/5c74b98d-b28d-4680-a8a8-b0b850cbfddd") format("woff"),
+    url("//cloud.webtype.com/webtype/ff/4/0a6a8f69-1e1a-4189-a626-53e47723b678#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Titling Gothic FB Narr";
+    src: url("//cloud.webtype.com/webtype/ff/2/167dc254-09d1-4a80-908c-8ceddba5dd4c");
+    src:  url("//cloud.webtype.com/webtype/ff/2/167dc254-09d1-4a80-908c-8ceddba5dd4c#iefix")  format("embedded-opentype"),
+    url("//cloud.webtype.com/webtype/ff/1/cfed8c4d-7e5f-4d43-a753-1b0b87095b5c") format("truetype"),
+    url("//cloud.webtype.com/webtype/ff/3/574fb8fc-d47b-4606-a632-e54380134be0") format("woff"),
+    url("//cloud.webtype.com/webtype/ff/4/7b34f30a-6591-4483-a00f-a5c21315afb7#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Titling Gothic FB Narr Std";
+    src: url("//cloud.webtype.com/webtype/ff/2/b0549f41-783d-473b-9f74-e76355dab3d8");
+    src:  url("//cloud.webtype.com/webtype/ff/2/b0549f41-783d-473b-9f74-e76355dab3d8#iefix")  format("embedded-opentype"),
+    url("//cloud.webtype.com/webtype/ff/1/846ff779-f661-4e38-853c-00cf5cc32831") format("truetype"),
+    url("//cloud.webtype.com/webtype/ff/3/6cba7ac3-a7a8-45c8-8dae-c7b2b7efe144") format("woff"),
+    url("//cloud.webtype.com/webtype/ff/4/24f10611-905c-4ae7-910c-da52ed78b6bb#web") format("svg");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "Titling Gothic FB Norm Med";
+    src: url("//cloud.webtype.com/webtype/ff/2/d0b7bc5a-d86a-4890-a97b-45dd13aa8143");
+    src:  url("//cloud.webtype.com/webtype/ff/2/d0b7bc5a-d86a-4890-a97b-45dd13aa8143#iefix")  format("embedded-opentype"),
+    url("//cloud.webtype.com/webtype/ff/1/7e93f85f-905b-4f8e-9731-e222e790fffe") format("truetype"),
+    url("//cloud.webtype.com/webtype/ff/3/1da5e1d5-ab56-4853-9f32-1b377e67d360") format("woff"),
+    url("//cloud.webtype.com/webtype/ff/4/a14eba76-8c51-4012-ba5b-9171e767ad84#web") format("svg");
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  body {
+    margin: 0 0 10px 0;
+    font-family: "Titling Gothic FB Narr", arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+    background: url( https://secure2.convio.net/cpc/images/PBY_Tmblr_1600x900_2015.jpg) left no-repeat fixed;
+    background-size: cover !important;
+  }
+
+  /* social share icons */ 
+
+  .fa-instagram {
+    color: #68B247;
+    float: right;
+    padding: 0 0 0 10px;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .fa-facebook {
+    color: #68B247;
+    float: right;
+    padding: 0 0 0 10px;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .fa-twitter {
+    color: #68B247;
+    float: right;
+    padding: 0 0 0 10px;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .fa:hover {
+    color: #6b6b6b;
+  }
+
+  .container-header {
+    width: 800px;
+    margin: 0 auto; 
+  } 
+
+  /* begin header */ 
+
+  header {
+    color: white;
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(104, 178,71, .9);
+    height: 215px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .logo-header {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 8px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .logo-header a img {
+    height: 74px;
+  }
+
+  .logo-header a {
+      text-decoration: none;
+    border:none;
+  }
+
+  .logo-header a:hover {
+    text-decoration: none;
+    border:none;
+  }
+
+  #orangeDonate{
+    padding: 29px;
+    background-color: #FFA500;
+    margin: 0;
+    float: right;
+    border-top-right-radius: 5px;
+  }
+
+  #orangeDonate a {
+    color: white;
+  }
+
+  #orangeDonate:hover, #orangeDonate:hover a {
+    color:rgb(237, 237, 237); /* light gray #EDEDED */
+    background-color: rgb(235, 133, 38); /* Dark Orange #EB8526*/
+  }
+
+  .description-header {
+    font-family: arial, sans-serif;
+    width: 800px;
+    text-align: center;
+    height: 62px;
+    padding: 10px 0 5px 0;
+  }
+
+  .description-header a {
+    color: white;
+  }
+
+  .description-header a:hover {
+    color: inherit;
+    border: none;
+  }
+
+  .description-header h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Titling Gothic FB Narr', sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .description-header h1 {
+    line-height: .9 ;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Titling Gothic FB Norm Med',sans-serif;
+    text-align: center;
+  }
+
+  .navigation {
+    height: 35px;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 2.5;
+    width: 620px;
+    margin: 5px auto;
+    padding: 0 20px 0 0 ;
+    box-shadow: 1px 1px 1px #6b6b6b;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    font-weight: 00;
+    color: #68B247;
+    text-transform: uppercase;
+    margin: 0 0 0 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  }
+
+  .navigation a:hover {
+    border-bottom: none;
+  }
+
+  .navigation a:hover {
+    color: #6b6b6b;
+  }
+
+  /* end header  */
+
+  /* begin body */
+
+  .container-posts {
+    width: 800px;
+    padding: 0 0 30px 0;
+    margin: 0 auto;
+    background-color: rgba(225, 225,225, .85);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .post {
+    width: 550px;
+    margin-bottom: 1.5em; 
+    padding: 30px 30px 2px;
+    margin-top: 0;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #fff;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #6b6b6b;
+  }
+
+  /*Date box*/
+
+  .permalink { 
+    position:relative;
+    top:20px;
+    left:90px;
+    width:80px;
+    display:block;
+    height: 25px;
+    font-size: 12px;
+    background-color: #74c043;
+    padding-right:10px;
+    text-align:right;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index:4;
+    box-shadow: 2px 2px 2px #6b6b6b;
+    padding-top:5px;
+    line-height: 1.6;
+  }
+
+  .permalink a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+
+  .permalink a:hover {
+    border-bottom: none;
+  }
+
+  .permalink-post {
+    padding: 0 300px;
+  }   
+
+  .post h3 a {
+    font-size: 24px;
+  }
+
+  .post-list li {
+    margin: 0 0 0 50px;
+  }
+
+  a {
+    color:  #74c043;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #6b6b6b;
+    border-bottom: 1px dashed;
+  }
+
+  a:visted {
+    color:  #74c043;
+  }
+
+  .like-reblog {
+    list-style: none;
+    border-top: 1px solid #74c043;
+    padding: 10px 15px;
+    font-size: 12px;
+    overflow: auto;
+  }
+
+  .like-reblog li {
+    float: right;
+    padding: 6px;
+    height: 15px;
+  }
+
+  .pagelist {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  .pagenav {
+    margin: 0 auto;
+    width: 640px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .pagenav a {
+    color: #74c043;
+  }
+
+  .photo-center {
+    text-align: center;
+  }
+
+  ul, ol { 
+    padding-left: 0; 
+  }
+
+  /* end body */
+
+  /* notes */
+
+  ol.notes {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  ol.notes li.note {
+    padding: 2px;
+    list-style-type: none;
+  }
+
+  ol.notes li.note img.avatar {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  ol.notes li.note span.action {
+    font-weight: normal;
+  }
+
+  ol.notes li.note .answer_content {
+    font-weight: normal;
+  }
+
+  ol.notes li.note blockquote {
+    border-color: #eee;
+    padding: 4px 10px;
+    margin: 10px 0px 0px 30px;
+  }
+
+  ol.notes li.note blockquote a {
+    text-decoration: none;
+  }
+
+  /* tags */
+
+  .tags ul li {
+    list-style-type: none;
+    float: right;
+    padding: 6px;
+    height: 20px;
+  }
+
+  /* blockquotes */
+
+  blockquote { 
+    width: 450px; 
+    margin-left: auto; 
+    padding-left: auto; 
+    color: #a5a5a5;
+    /* This is the quote mark in the left corner (also, the only image
+    in this theme). Remove if you don't want it. */
+    background: url(http://cpc.convio.net/blog/images/aster.png) 
+    top left no-repeat; 
+    font-style: italic;
+    margin-top: 0;
+    font-size:17px;
+    padding-left: 25px;
+  }
+
+  /* Make nested blockquotes behave. */
+  blockquote blockquote { 
+    margin-left: 0; 
+  }
+
+  /* ems in blockquotes look like normal text. Could be confusing; should work
+  fine unless there is a giant em block at the end of the blockquote, or
+  worse, making up the whole blockquote. Remove if you don't want to take
+  that risk, but instead suffer from a lack of distinguished emphasis in
+  blockquotes. */
+  blockquote em { 
+    font-style: normal; 
+  }
+
+  blockquote ul, blockquote ol { 
+    padding-left: 0em; 
+  }
+
+  /* open AddThis CSS for Social share buttons */
+
+  a.twitter-share-button,
+  a.twitter-mention-button,
+  a.twitter-hashtag-button {
+    display: inline-block;
+    padding: 1px 3px 0 20px;
+    border: #ccc solid 1px;
+    border-radius: 3px;
+    background: #f8f8f8 url(//platforlom.twitter.com/images/bird.png) 2px 3px no-repeat;
+    background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+    -webkit-linear-gradient(#fff, #dedede);
+    background: url(//platform.twitter.com/images/bird.png) 2px 3px no-repeat,
+    linear-gradient(#fff, #dedede);
+    background-size: 16px 13px, auto auto;
+
+    /* Text */
+    font: bold 11px/17px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    white-space: nowrap;
+  }
+
+  /* Color Highlight for keyboard navigation */
+  a.twitter-share-button:focus,
+  a.twitter-mention-button:focus,
+  a.twitter-hashtag-button:focus {
+    outline: none;
+    border-color: black;
+  }
+
+  .addthis_sharing_toolbox a {
+    border: none;
+    text-decoration: none;
+  }
+
+  .addthis_sharing_toolbox a:hover {
+    border: none;
+    text-decoration: none;
+  }
+
+  /* close AddThis CSS */
+</style>
+<!--///////////////////////////////////-->
+<!--Universal -Google Analytics -->	c
+<!--///////////////////////////////////-->
+<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-17339074-1', 'tumblr.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    
+</script>
+
+    
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <div class="container-header">
+    <header>
+      <div class="logo-header">
+        <a href="http://centralparknyc.org" target="_blank"><img src="http://cpc.convio.net/redesign/img/cpc/35logo-74h.jpg" ></a>
+        <div id="orangeDonate">
+          <a href="https://secure2.convio.net/cpc/site/SPageServer?pagename=donate&amp;s_src=website&amp;s_subsrc=tumblr_OrangeButton">DONATE</a>
+        </div>
+      </div>
+      <div class="description-header">
+        <h2><a href="{BlogURL}">The Official Blog of New York City's</a></h2>
+        <h1><a href="{BlogURL}">Central Park</a></h1>
+      </div>
+      <div class="navigation">
+        <a href="http://centralparknyc.tumblr.com/about"><i class="fa fa-caret-right"></i> ABOUT</a>
+        <a href="http://centralparknyc.tumblr.com/archive"><i class="fa fa-caret-right"></i> Archives</a>
+        <a href="http://www.facebook.com/CentralParkNYC" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.instagram.com/CentralParkNYC" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="http://www.twitter.com/CentralParkNYC" target="_blank"><i class="fa fa-twitter"></i></a>
+      </div>
+    </header>
+  </div> 
+  <div class="container-posts-body">
+    <div class="container-posts"> 
+    {block:Posts}
+
+      <!-- TEXT POST -->
+      {block:Text}
+        <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+        <div class="post">
+          {block:Title}
+          <h3><a href="{Permalink}">{Title}</a></h3>
+            {block:PermalinkPage}  
+              <!-- Begin AddThis Social Share -->
+                <div class="addthis_sharing_toolbox"></div>
+                <script type="text/javascript">
+                var addthis_share = addthis_share || {}
+                addthis_share = {
+                passthrough : {
+                twitter: {
+                via: "CentralParkNYC"
+                }
+                }
+                }
+                </script>
+              <!-- End AddThis Social Share -->
+            {/block:PermalinkPage}
+          {/block:Title}
+          <div class="post-list">
+            {Body}
+            {block:ContentSource} {lang:Source}: <a href="{SourceURL}">{SourceTitle}</a>{/block:ContentSource}
+          </div>
+          <ul class="like-reblog tags">
+            <li>{LikeButton}</li>
+            <li>{ReblogButton}</li>
+            <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+            {block:HasTags}
+            {block:Tags}
+              <li><a href="{TagURLChrono}">#{Tag}</a></li>
+            {/block:Tags}
+            {/block:HasTags}
+          </ul>
+          {block:PostNotes}{PostNotes}{/block:PostNotes}
+        </div>
+      {/block:Text}
+      <!-- END TEXT POST -->
+
+      <!-- PHOTO POST --> 
+      {block:Photo} 
+        <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+        <div class="post">   
+          {block:PermalinkPage}
+            <!-- Begin AddThis Social Share -->
+            <div class="addthis_sharing_toolbox"></div></br>
+            <script type="text/javascript">
+            var addthis_share = addthis_share || {}
+            addthis_share = {
+            passthrough : {
+            twitter: {
+            via: "CentralParkNYC"
+            }
+            }
+            }
+            </script>
+            <!-- End AddThis Social Share -->
+          {/block:PermalinkPage}
+          <div class="post-list">
+            <div class="photo-center">
+              <img src="{PhotoURL-500}">
+            </div>
+            {block:Caption}{Caption}{/block:Caption}
+          </div>
+          <ul class="like-reblog tags">
+            <li>{LikeButton}</li>
+            <li>{ReblogButton}</li>
+            <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+            {block:HasTags}
+            {block:Tags}
+             <li><a href="{TagURLChrono}">#{Tag}</a></li>
+            {/block:Tags}
+            {/block:HasTags}
+          </ul>
+          {block:PostNotes}{PostNotes}{/block:PostNotes}
+        </div>
+      {/block:Photo}
+      <!-- END PHOTO POST -->
+
+      <!-- BEGIN QUOTE POST -->
+      {block:Quote}
+        <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+        <div class="post">
+          {block:PermalinkPage}
+            <!-- Begin AddThis Social Share -->
+            <div class="addthis_sharing_toolbox"></div></br>
+            <script type="text/javascript">
+            var addthis_share = addthis_share || {}
+            addthis_share = {
+            passthrough : {
+            twitter: {
+            via: "CentralParkNYC"
+            }
+            }
+            }
+            </script>
+            <!-- End AddThis Social Share -->
+          {/block:PermalinkPage}
+          <div class="post-list">
+            <blockquote>{Quote}</blockquote>
+            {block:Source}&mdash;{Source}{/block:Source}
+          </div>
+          <ul class="like-reblog tags">
+            <li>{LikeButton}</li>
+            <li>{ReblogButton}</li>
+            <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>    
+            {block:HasTags}
+            {block:Tags}
+            <li><a href="{TagURLChrono}">#{Tag}</a></li>  
+            {/block:Tags}
+            {/block:HasTags}
+          </ul>
+          {block:PostNotes}{PostNotes}{/block:PostNotes}
+        </div>
+      {/block:Quote}
+      <!-- END QUOTE POST -->
+
+      <!-- BEGIN LINK POST -->
+      {block:Link}
+        <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+        <div class="post">
+          {block:PermalinkPage}
+            <!-- Begin AddThis Social Share -->
+            <div class="addthis_sharing_toolbox"></div></br>
+            <script type="text/javascript">
+            var addthis_share = addthis_share || {}
+            addthis_share = {
+            passthrough : {
+            twitter: {
+            via: "CentralParkNYC"
+            }
+            }
+            }
+            </script>
+            <!-- End AddThis Social Share -->
+          {/block:PermalinkPage}
+          <div class="post-list">
+            <a href="{URL}" {Target}><h3>{Name}</h3></a>
+            <p>{block:Thumbnail}<img src="{Thumbnail}" />{/block:Thumbnail}</p>
+            <P>
+              <blockquote><i>{Excerpt}</i>blockquote>
+            </p>
+            <p>{block:Description}{Description}{/block:Description}</p>
+
+          </div>
+          <ul class="like-reblog tags">
+            <li>{LikeButton}</li>
+            <li>{ReblogButton}</li>
+            <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+            {block:HasTags}
+            {block:Tags}
+            <li><a href="{TagURLChrono}">#{Tag}</a></li>
+            {/block:Tags}
+            {/block:HasTags}
+          </ul>
+          {block:PostNotes}{PostNotes}{/block:PostNotes}
+        </div>
+      {/block:Link}
+      <!-- END LINK POST -->
+
+      <!-- BEGIN CHAT POST -->
+      {block:Chat}
+        <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span><div class="post">
+        {block:PermalinkPage}
+          <!-- Begin AddThis Social Share -->
+          <div class="addthis_sharing_toolbox"></div></br>
+          <script type="text/javascript">
+          var addthis_share = addthis_share || {}
+          addthis_share = {
+          passthrough : {
+          twitter: {
+          via: "CentralParkNYC"
+          }
+          }
+          }
+          </script>
+          <!-- End AddThis Social Share -->
+        {/block:PermalinkPage}
+        {/block:Title}
+        <div class="post-list">
+          {block:Title}{Title}{/block:Title}
+          <table>
+            {block:Lines}
+              <tr>
+              <th>{block:Label}{Label}{/block:Label}</th>
+              <td>{Line}</td>
+              </tr>
+            {/block:Lines}
+          </table>
+        </div>
+        <ul class="like-reblog tags">
+          <li>{LikeButton}</li>
+          <li>{ReblogButton}</li>
+          <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+          {block:HasTags}
+          {block:Tags}
+          <li><a href="{TagURLChrono}">#{Tag}</a></li>
+          {/block:Tags}
+          {/block:HasTags}
+        </ul>
+        {block:PostNotes}{PostNotes}{/block:PostNotes}
+        </div>
+      {/block:Chat}
+      <!-- END CHAT POST -->
+
+      <!-- BEGIN AUDIO POST -->
+      {block:Audio}
+      <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+      <div class="post">
+        {block:PermalinkPage}
+          <!-- Begin AddThis Social Share -->
+          <div class="addthis_sharing_toolbox"></div></br>
+          <script type="text/javascript">
+          var addthis_share = addthis_share || {}
+          addthis_share = {
+          passthrough : {
+          twitter: {
+          via: "CentralParkNYC"
+          }
+          }
+          }
+          </script>
+          <!-- End AddThis Social Share -->
+        {/block:PermalinkPage}
+        {/block:Title}
+        <div class="post-list">
+          {AudioPlayer}
+          {block:Caption}{Caption}{/block:Caption}
+        </div>    
+        <ul class="like-reblog tags">
+          <li>{LikeButton}</li>
+          <li>{ReblogButton}</li>
+          <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+          {block:HasTags}
+          {block:Tags}
+          <li><a href="{TagURLChrono}">#{Tag}</a></li>
+          {/block:Tags}
+          {/block:HasTags}
+        </ul>
+        {block:PostNotes}{PostNotes}{/block:PostNotes}
+      </div>
+      {/block:Audio}
+      <!-- END AUDIO POST -->
+
+      <!-- BEGIN VIDEO POST -->
+      {block:Video}
+      <span class="permalink">{block:Date}  <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />{/block:Date}</span>
+      <div class="post">
+        {block:PermalinkPage}
+          <!-- Begin AddThis Social Share -->
+          <div class="addthis_sharing_toolbox"></div></br>
+          <script type="text/javascript">
+          var addthis_share = addthis_share || {}
+          addthis_share = {
+          passthrough : {
+          twitter: {
+          via: "CentralParkNYC"
+          }
+          }
+          }
+          </script>
+          <!-- End AddThis Social Share -->
+        {/block:PermalinkPage}
+        {/block:Title}
+        <div class="post-list">
+          <div class="photo-center">
+            {Video-500}
+          </div>
+          {block:Caption}{Caption}{/block:Caption}
+        </div>
+        <ul class="like-reblog tags">
+          <li>{LikeButton}</li>
+          <li>{ReblogButton}</li>
+          <li>{block:NoteCount}<a href="{Permalink}#notes">{NoteCountWithLabel}</a>{/block:NoteCount}</li>  
+          {block:HasTags}
+          {block:Tags}
+          <li><a href="{TagURLChrono}">#{Tag}</a></li>
+          {/block:Tags}
+          {/block:HasTags}
+        </ul>
+        {block:PostNotes}{PostNotes}{/block:PostNotes}
+      </div>
+      {/block:Video}
+      <!-- END VIDEO POST -->
+
+    {/block:Posts}
+
+    {block:Pagination}
+    <div class="pagenav">
+      {block:PreviousPage}<a href="{PreviousPage}"><i class="fa fa-arrow-left"></i> Previous</a>&nbsp; &nbsp; &nbsp;{/block:PreviousPage}
+      {block:NextPage}<a href="{NextPage}">Next <i class="fa fa-arrow-right"></i></a>{/block:NextPage}
+    </div>  
+    {/block:Pagination}
+  </div>
+</body>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54c02491187192fc" async="async"></script>
+</html>

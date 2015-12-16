@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>{block:PostTitle}{PostTitle} - {/block:PostTitle}{block:PostSummary}{PostSummary} - {/block:PostSummary}{block:TagPage}{Tag} - {/block:TagPage}{block:PreviousPage}Page {CurrentPage}/{TotalPages} - {/block:PreviousPage}{Name}</title>
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="icon" sizes="128x128" href="{PortraitURL-128}">
+  <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+  {block:Description}
+   <meta name="description" content="{MetaDescription}">
+  {/block:Description}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-title" content="{Name}">
+  <meta http-equiv="cleartype" content="on">
+  <!-- Custom Colors -->
+  <meta name="color:Alternate background" content="#F8F8F8">
+  <meta name="color:Hover" content="#595142"/>
+  <!-- Custon Fonts -->
+  <meta name="font:Body" content="'Helvetica Neue',Helvetica,Arial,sans-serif">
+
+  <meta name="text:Google analytics ID" content="">
+  
+  <!-- Bootstrap core CSS CDN -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  
+  <!-- Custom styles for this template -->
+  <style type="text/css">
+    @font-face {
+      font-family: "Titling Gothic FB Cond";
+      src: url("//cloud.webtype.com/webtype/ff/2/917871f8-6cec-46a5-8329-65583e05f073");
+      src:  url("//cloud.webtype.com/webtype/ff/2/917871f8-6cec-46a5-8329-65583e05f073#iefix")  format("embedded-opentype"),
+      url("//cloud.webtype.com/webtype/ff/1/15a8aa74-d5e3-4714-b0cc-20f345a5e301") format("truetype"),
+      url("//cloud.webtype.com/webtype/ff/3/5c74b98d-b28d-4680-a8a8-b0b850cbfddd") format("woff"),
+      url("//cloud.webtype.com/webtype/ff/4/0a6a8f69-1e1a-4189-a626-53e47723b678#web") format("svg");
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    .blog-title {
+      font-family: 'Titling Gothic FB Cond', sans-serif;
+      font-style: normal;
+    }
+
+    body {
+     background-color:  white;
+     font-family: {font:Body};
+     font-variant-ligatures: common-ligatures ;
+     -webkit-font-variant-ligatures: common-ligatures ;
+     font-size: 1em;
+    }
+    
+    a { color: {AccentColor}; }
+    a:hover { color: {color:Hover}; }
+    a.out-link::before { content: "» " ; }
+    img, svg, iframe { max-width: 100%; margin: auto; }
+    .container { overflow: hidden; }
+    
+    h1,
+    h2 {
+     font-family: 'Titling Gothic FB Cond', sans-serif;
+     font-weight: {TitleFontWeight};
+     font-style: italic;
+    }
+
+    h2 a {
+      font-family: 'Titling Gothic FB Cond', sans-serif;
+      font-style: normal;
+    }
+    
+    h1 { font-size: 300%; }
+
+    @media screen and (max-width: 500px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+    
+    .part h2 { 
+        font-size: 150%;
+        margin-top: 0;
+    }
+    
+    @media screen and (min-width: 767px) {
+      .img-responsive {
+        max-width: 100%;
+        max-width: 500px;
+        margin: 0;
+      }
+    }
+
+    blockquote {
+        font-size: inherit;
+    }
+    
+    .btn-primary { 
+        background-color: {AccentColor};
+        color: {BackgroundColor};
+        border: none;
+    }
+    
+    .btn-primary:hover { background-color: {color:Hover}; }
+    
+    /* Navbar */
+    .navbar {
+        border-radius: 0px;
+        font-weight: 500;
+        margin-bottom: 0;
+        border-width: 0 0 1px 0;
+    }
+    
+    .navbar-default .navbar-brand,
+    .navbar-collapse .navbar-nav li a {
+        color: #636466;
+    }
+
+    .navbar-brand>img {
+      display: block;
+      width: 135px;
+      margin: 0 10px;
+    }
+
+    .navbar-nav {
+      background-color: white;
+      margin: -1.5px -15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .navbar-nav {
+        background-color: #f7f7f7;
+      }
+    }  
+    
+    .navbar-brand {
+      float: left;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 0;
+    }
+    .navbar h1 {
+        font-family: inherit;
+        margin-top: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+    }
+    
+    .navbar hr { margin: 0; }
+    
+    .navbar-default { background-color: white; color: #68724b; height: 50px;}; }
+    
+    .navbar-default .navbar-toggle {
+        background-color: {BackgroundColor};
+        border-color: {BackgroundColor};
+    }
+    
+    .navbar-default .navbar-toggle:hover  {
+        background-color: {AccentColor};
+        border-color: {AccentColor};
+    }
+    
+    .navbar-default .navbar-toggle .icon-bar { background-color: {AccentColor};}
+    
+    .navbar-default .navbar-toggle:hover .icon-bar { background-color: {BackgroundColor}}
+    
+    /* Jumbotron */
+    .jumbotron {
+    color: #FAFAFA;
+    background: #68b247;
+    margin-bottom: 0; s
+    padding: 20px 0;
+    background: url("http://www.centralparknyc.org/assets/images/2014/quizzess/grass-mobile.jpg");
+    background-size: 241px;
+    }
+    
+    .jumbotron a {
+     color: inherit;
+     text-decoration: underline;
+    }
+
+    @media screen and (min-width: 768px) {
+      .jumbotron h1, .jumbotron .h1 {
+        font-size: 52px;
+        letter-spacing: 2px;
+        font-style: normal;
+        word-spacing: 2px;
+        }
+      }
+    }
+    
+    @media screen and (max-width: 767px) {
+      .jumbotron h1, .jumbotron .h1 {
+      font-size: 2em;
+      letter-spacing: 1px;
+      font-style: normal;
+      word-spacing: 2px;
+      }
+    }
+
+    .jumbotron a:hover { text-decoration: none; }
+    
+    .jumbotron small {color: inherit;}
+    
+    /* Parts styling */
+    .part { 
+        padding: 30px 0;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    
+    .margin-fix { margin-bottom: 20px; }
+    
+    .alternate { background: {color:Alternate background}; }
+    
+    .caption { overflow: hidden; }
+    
+    @media (max-width: 767px) {
+     .full-width { 
+        margin-left : -15px; 
+        margin-right: -15px;
+     }
+    }
+    
+    @media (max-width: 992px) {
+     .col-xs-4 { text-align: right; }
+    }
+    
+    /* Time styling */
+    time { font-weight: bold; }
+    
+    /* Lists styling */
+    ul.chat,
+    #tumblr-notes ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #tumblr-notes { padding: 20px; }
+    
+    ul.chat li,
+    ol.notes li {
+        list-style-type: none;
+    }
+    
+    /* For avatar in notes */
+    #tumblr-notes img { margin: 0 10px 0 0; }
+    
+    /* Quotes */
+    .quote        {
+     font-family: {TitleFont};
+     font-size: 200%;
+     font-style: italic;
+    }
+    
+    .quote footer { 
+     font-family: {font:Body};
+     font-size: 50%;
+     font-style: normal;
+    }
+    
+    /* Contact */
+    #twitter:hover ~ #mail-hello,
+    #twitter:hover ~ #mail-pointfr,
+    #web:hover ~ #mail-hello,
+    #web:hover ~ #mail-arobase {
+        opacity: 0.1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+  {CustomCSS}
+  </style>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-17339074-1', 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', ['secure2.convio.net', 'centralparknyc.org']);
+
+    var tumblr_ga_url = '/tumblr' + window.location.pathname + window.location.search;
+
+    ga('send', 'pageview', tumblr_ga_url);
+
+  </script>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <div class="navbar navbar-default" role="navigation">
+   <div class="container">
+    <div class="navbar-header">
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+     </button>
+     <a class="navbar-brand" href="{BlogURL}"><img src="http://cpc.convio.net/redesign/img/cpc/35logo-74h.jpg" /></a>
+    </div>
+    <div class="collapse navbar-collapse">
+     <ul class="nav navbar-nav">
+      {block:HasPages}
+       {block:Pages}
+        <li><a href="{URL}">{Label}</a></li>
+       {/block:Pages}
+      {/block:HasPages}
+      {block:IfShowFollowOnTumblr}
+       <li><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a></li>
+      {/block:IfShowFollowOnTumblr}
+      {block:AskEnabled}
+       <li><a href="/ask">contact</a></li>
+      {/block:AskEnabled}
+      <li><a href="http://centralparknyc.tumblr.com/tagged/Institute-for-Urban-Parks">field notes from the institute</a>
+      {block:SubmissionsEnabled}
+       <li><a href="/submit">{SubmitLabel}</a></li>
+      {/block:SubmissionsEnabled}
+      {block:IfShowRSS}
+       <li><a href="{RSS}">{lang:RSS}</a></li>
+      {/block:IfShowRSS}
+     </ul>
+    </div><!--/.nav-collapse -->
+   </div><!--/.container -->
+  </div><!--/.navbar -->
+  
+  {block:IndexPage}
+    <div class="jumbotron{block:TagPage} hidden{/block:TagPage}">
+     <div class="container">
+      <h1 class="blog-title">{Title}</h1>
+      {block:Description}
+       <p>{Description}{block:PreviousPage}<i> — {lang:CurrentPage of TotalPages}</i>{/block:PreviousPage}</p>
+      {/block:Description}
+     </div><!--/.container -->
+    </div><!--/.jumbotron -->
+  {/block:IndexPage}
+  
+  {block:TagPage}
+   <div class="part alternate">
+    <div class="container">
+       <h3 class="text-capitalize">{Tag}<small class="text-lowercase"> — {lang:CurrentPage of TotalPages}</small></h3>
+    </div><!--/.container -->
+   </div><!--/.part alternate -->
+  {/block:TagPage}
+  
+  {block:Posts}
+   <div class="part{block:Even} alternate{/block:Even}">
+    <div class="container">
+     <div class="row">
+     
+       {block:Text}
+       <div class="col-md-8 lead">
+        {block:Title}
+        <h3><a href="{Permalink}">{Title}</a></h3>
+         <h2>{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}{Title}{block:IndexPage}</a>{/block:IndexPage}</h2>
+        {/block:Title}
+        {Body}
+       </div>
+       {/block:Text}
+       
+       {block:Photo}
+        <div class="col-md-8 lead caption">
+         {LinkOpenTag}
+          <img class="img-responsive margin-fix" src="{PhotoURL-1280}" alt="{PhotoAlt}">
+         {LinkCloseTag}
+         {block:Caption}
+          {Caption}
+         {/block:Caption}
+        </div>
+       {/block:Photo}
+                            
+       {block:Panorama}
+       <div class="col-md-12 full-width">
+         {LinkOpenTag}
+          <img class="img-responsive margin-fix" src="{PhotoURL-Panorama}" alt="{PhotoAlt}">
+         {LinkCloseTag}
+         </div>
+         {block:Caption}
+          <div class="col-md-8 caption lead">
+           {Caption}
+          </div>
+         {/block:Caption}
+       {/block:Panorama}
+
+       {block:Photoset}
+       <div class="col-md-8">
+        {block:Photos}
+         <img class="img-responsive margin-fix" src="{PhotoURL-500}" alt="{PhotoAlt}">
+        {/block:Photos}
+        {block:Caption}
+         <div class="caption lead">
+          {Caption}
+         </div>
+        {/block:Caption}
+       </div>
+       {/block:Photoset}
+                            
+       {block:Quote}
+       <div class="col-md-8 lead">
+        <blockquote class="quote">
+         &laquo;&nbsp;{Quote}&nbsp;&raquo;
+         {block:Source}
+          <footer>{Source}</footer>
+         {/block:Source}
+        </blockquote>
+       </div>
+       {/block:Quote}
+                            
+       {block:Link}
+       <div class="col-md-8 lead">
+        <h2><a href="{URL}" {Target} class="out-link">{Name}</a><small> —&nbsp;{Host}</small></h2>
+        {block:Description}
+         {block:Thumbnail}
+          <div class="row">
+           <div class="text-center col-xs-12 col-sm-4">
+            <a href="{URL}" class="thumbnail" {Target}><img class="img-responsive" src="{Thumbnail}" alt="{Host}"></a>
+           </div>
+          {/block:Thumbnail}
+          <div class="description{block:Thumbnail} col-xs-12 col-sm-8{/block:Thumbnail}">
+           {Description}
+          </div>
+         {block:Thumbnail}</div>{/block:Thumbnail}
+        {/block:Description}
+       </div>
+       {/block:Link}
+                            
+       {block:Chat}
+       <div class="col-md-8 lead">
+        {block:Title}
+         <h2>{block:IndexPage}<a href="{Permalink}">{/block:IndexPage}{Title}{block:IndexPage}</a>{/block:IndexPage}</h2>
+        {/block:Title}
+        <ul class="chat">
+         {block:Lines}
+          <li class="{Alt} user_{UserNumber}">
+           {block:Label}
+            <small><b>{Label}</b></small>
+           {/block:Label}
+           {Line}
+          </li>
+         {/block:Lines}
+        </ul>
+       </div>
+       {/block:Chat}
+                            
+       {block:Video}
+        <div class="col-md-12 full-width">
+         <div class="embed-responsive embed-responsive-16by9 margin-fix">
+          {Video-700}
+         </div>
+        </div>
+        {block:Caption}
+         <div class="col-md-8 lead caption">
+          {Caption}
+         </div>
+        {/block:Caption}
+       {/block:Video}
+                           
+       {block:Audio}
+       <div class="col-md-8">
+        {block:AudioEmbed}
+         {AudioEmbed}
+        {/block:AudioEmbed}
+        {block:Caption}
+         <div class="caption lead">
+          {Caption}
+         </div>
+        {/block:Caption}
+       </div>
+       {/block:Audio}
+       
+       {block:Answer}
+       <div class="col-md-8 lead">
+        <h2>{Question}</h2>
+        <p class="text-right">{lang:Asked by Asker 2}</p>
+        {Answer}
+       </div>
+       {/block:Answer}
+      
+      <div class="col-md-4">
+       {block:Date}
+        <p>
+        {block:NotReblog}
+         {lang:By PostAuthorName 2}
+        {/block:NotReblog}
+        
+        {block:RebloggedFrom}
+         <span class="glyphicon glyphicon-retweet"></span>
+         {lang:Reblogged from} <a href="{ReblogParentURL}">&raquo;&nbsp;{ReblogParentName}</a>
+         {/block:RebloggedFrom}
+         
+         {block:ContentSource}
+          (via <a href="{SourceURL}">&raquo;&nbsp;{SourceTitle}</a>)
+         {/block:ContentSource}
+          —&nbsp;<time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}">{DayOfMonthWithZero}&nbsp;{Month}&nbsp;{Year}</time>
+         </p>
+        <div class="row">
+         {block:IndexPage}
+          <div class="hidden-xs hidden-sm col-md-12">
+           <p><a href="{Permalink}">{lang:Permalink}</a></p>
+          </div><!-- /.hidden-xs -->
+         {/block:IndexPage}
+         <div class="{block:NoteCount}col-xs-12 {/block:NoteCount}col-md-12">
+          {block:HasTags}
+           <p>{block:Tags} <a class="btn btn-xs btn-primary text-capitalize" href="{TagURL}" role="button">{Tag}</a>{/block:Tags}</p>
+          {/block:HasTags}
+         </div>
+         {block:NoteCount}
+          <div class="col-xs-12 col-md-12">
+           <p><a href="{Permalink}#tumblr-notes">{NoteCountWithLabel}</a></p>
+          </div>
+         {/block:NoteCount}
+        </div><!-- /.row -->
+       {/block:Date}
+      </div> <!-- /.col-md-4 -->
+      
+       {block:PostNotes}
+        <div class="col-md-8 part alternate lead" id="tumblr-notes">
+          <p>{lang:Notes}&nbsp;:</p>
+          {PostNotes-16}
+        </div>
+       {/block:PostNotes}
+      
+     </div><!-- /.row -->
+    </div><!-- /.container -->
+   </div><!-- /#part -->
+  {/block:Posts}
+
+  <div class="part alternate">
+   <div class="container-fluid text-center">
+     <div class="btn-group dropup">
+     {block:PreviousPage}
+      <a class="btn btn-default" href="{PreviousPage}" role="button">&laquo; {lang:Newer}</a>
+     {/block:PreviousPage}
+     {block:IndexPage}
+      <div class="btn-group" role="group">
+       <button type="button" class="btn btn-default{block:Pagination} dropdown-toggle{/block:Pagination}" data-toggle="dropdown" aria-expanded="false">
+        {CurrentPage}/{TotalPages}
+        {block:Pagination}<span class="caret"></span>{/block:Pagination}
+       </button>
+       {block:Pagination}
+       <ul class="dropdown-menu" role="menu">
+       {block:JumpPagination length="7"}
+        {block:JumpPage}
+         <li><a href="{URL}">{PageNumber}</a></li>
+        {/block:JumpPage}
+        {block:CurrentPage}
+         <li class="disabled"><a href="{URL}">{PageNumber}</a></li>
+        {/block:CurrentPage}
+       {/block:JumpPagination}
+       </ul>
+       {/block:Pagination}
+      </div>
+     {/block:IndexPage}
+     {block:NextPage}
+      <a class="btn btn-default" href="{NextPage}" role="button">{lang:Older} &raquo;</a>
+     {/block:NextPage}
+     </div>
+     {block:PermalinkPagination}
+      <div class="btn-group">
+       {block:NextPost}
+        <a class="btn btn-default" href="{NextPost}" role="button">&laquo; {lang:Next post}</a>
+       {/block:NextPost}
+       {block:PreviousPost}
+        <a class="btn btn-default" href="{PreviousPost}" role="button">{lang:Previous post} &raquo;</a>
+       {/block:PreviousPost}
+      </div>
+     {/block:PermalinkPagination}
+   </div><!-- /.container -->
+  </div><!-- /#part -->
+  
+  <footer class="part text-center">
+   <div class="container">
+    <ul class="list-inline">
+     <li><a href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a></li>
+     <li><a href="https://www.tumblr.com/theme/38505">{lang:Install this theme}</a></li>
+      {block:AskEnabled}
+       <li><a href="/ask">{AskLabel}</a></li>
+      {/block:AskEnabled}
+      {block:SubmissionsEnabled}
+       <li><a href="/submit">{SubmitLabel}</a></li>
+      {/block:SubmissionsEnabled}
+      <li><a href="#part-contact" data-toggle="modal">Contact</a></li>
+      {block:IfShowRSS}
+       <li><a href="{RSS}">{lang:RSS}</a></li>
+      {/block:IfShowRSS}
+    </ul>
+   </div><!-- /.container-->
+  </footer><!-- /.part-->
+  
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+ 
+
+
+ </body>
+</html>

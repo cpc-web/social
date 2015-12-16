@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"></script><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]--><head>
+<!--   
+Follow Blogit at: http://blogit-theme.tumblr.com/
+  :;.  ,;,    ,:,                                                   
+ ;;;;;;;;;;;;;;;;;,                                                 
+ `;;,  ;;;  ;;;;;;;                                                 
+           ;;;; ;;;;     ::::::::. ,:::,::::::,   :::`   .::::::::   
+          ,;;;,  ;;;;    :::::::,  :::::.`.::::: `:::,  ::::,`.::::, 
+         `;;;;   `;;;;   ::::      ::::     :::: `:::, ::::.....,:::`
+         ;;;;;;;;;;;;;`  ::::      ::::     :::: `:::, ::::::::::::: 
+        ;;;;;;;;;;;;;;;  ::::      ::::     :::: `:::, ::::,     .,. 
+       .;;;;       ,;;;; ::::      ::::     :::: `:::,  ,::::::::::: 
+        ,:,         .::  .,.        .,.     .,,   .,.     `,,,,,,.   
+Copyright (c)2014 Arnie http://www.arnie-design.co.uk
+Blogit Theme Version 1.2
+-->
+<title>{Title}{block:SearchPage}, {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}, {PostSummary}{/block:PostSummary}</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet" type="text/css">
+<link href="http://static.tumblr.com/wrblogn/n6Hn9y0d4/blogit-lite-1.2.min.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/x-icon" href="{Favicon}"/>
+<link rel="shortcut icon" type="image/x-icon" href="{Favicon}"/>
+<link rel="apple-touch-icon" sizes="57x57" href="{PortraitURL-64}"/>
+<link rel="apple-touch-icon" sizes="114x114" href="{PortraitURL-128}"/>
+<link rel="apple-touch-icon" sizes="72x72" href="{PortraitURL-96}"/>
+<link rel="apple-touch-icon" sizes="144x144" href="{PortraitURL-128}"/>
+<link rel="alternate" type="application/rss+xml" href="{RSS}"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="author" content="Arnie - http://www.arnie-design.co.uk">
+<meta name="Header image" content="" />
+<meta name="Background color" content="#ededed" />
+<meta name="Title color" content="#444444" />
+<meta name="Accent color" content="#75b1d6" />
+<meta name="Show header image" content="1" />
+<meta name="Show avatar" content="1" />
+<meta name="Show title" content="1" />
+<meta name="image:Background" content="" />
+<meta name="color:Header color" content="#75b1d6"/>
+<meta name="select:Header style" content="header-image full-screen" title="Bg image full screen">
+<meta name="select:Header style" content="header-image page-width" title="Bg image boxed">
+<meta name="select:Header style" content="header-colored full-screen" title="Color full screen">
+<meta name="select:Header style" content="header-colored page-width" title="Color boxed">
+<meta name="select:Header style" content="header-logo page-width" title="Logo boxed">
+<meta name="select:Header style" content="header-logo natural-width" title="Logo natural width">
+<meta name="select:Header style" content="header-clean" title="Clean style">
+<meta name="select:Title style" content="text-center" title="Center aligned">
+<meta name="select:Title style" content="text-left" title="Left aligned">
+<meta name="select:Title font" content="Roboto Slab" title="Roboto Slab">
+<meta name="select:Title font" content="Roboto" title="Roboto">
+<meta name="select:Title font" content="Oswald" title="Oswald">
+<meta name="select:Title font" content="Open Sans" title="Open Sans">
+<meta name="select:Title font" content="Asap" title="Asap">
+<meta name="select:Title font" content="Signika" title="Signika">
+<meta name="select:Title font" content="Lobster Two" title="Lobster Two">
+<meta name="select:Title font" content="Montserrat" title="Montserrat">
+<meta name="select:Title font" content="Old Standard TT" title="Old Standard">
+<meta name="select:Avatar shape" content="circle" title="Circle">
+<meta name="select:Avatar shape" content="square" title="Square">
+<meta name="select:Avatar border" content="avatar-border-on" title="On">
+<meta name="select:Avatar border" content="avatar-border-off" title="Off">
+<meta name="select:Page width" content="wide" title="Wide">
+<meta name="select:Page width" content="narrow" title="Narrow">
+<meta name="select:Custom pages column count" content="1" title="One column">
+<meta name="select:Custom pages column count" content="2" title="Two column">
+<meta name="if:Show helper tool tips" content="1" />
+<meta name="if:Show audio artwork" content="0" />
+<meta name="if:Show audio details" content="0" />
+<meta name="if:Show upper pagination" content="1" />
+<meta name="if:Show footer" content="1" />
+<meta name="if:Show following" content="0" />
+<meta name="if:Show archive" content="1" />
+<meta name="if:Show about" content="1" />
+<meta name="if:Show about avatar" content="1" />
+<meta name="text:About tagline 1" content="" />
+<meta name="text:About tagline 2" content="" />
+<meta name="text:Pages label" content="" />
+<meta name="text:Your email address" content="" />
+<meta name="text:Your Twitter username" content="" />
+<meta name="text:Your Facebook profile" content="" />
+<meta name="text:Your Instagram profile" content="" />
+<meta name="text:Your Youtube profile" content="" />
+<meta name="text:Your Google Plus profile" content="" />
+<meta name="text:Your Linked In profile" content="" />
+<meta name="text:Your Flickr profile" content="" />
+<meta name="text:Your Vimeo profile" content="" />
+<meta name="text:Your Pinterest profile" content="" />
+<meta name="text:Your Foursquare profile" content="" />
+<meta name="text:Google Analytics acc no" content="" />
+<meta name="text:Disqus Shortname" content="" />
+<meta name="application-name" content="{Title}"/> 
+<meta name="msapplication-TileColor" content="{AccentColor}"/> 
+<meta name="msapplication-square150x150logo" content="{PortraitURL-128}"/>
+<!--start open graph-->
+<meta property="og:site_name" content="{Title}"/>
+{block:IndexPage}
+  <meta property="og:title" content="{Title}"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="{MetaDescription}"/>
+  <meta property="og:image" content="{PortraitURL-64}"/>
+{/block:IndexPage}
+{block:PermalinkPage}
+<meta property="og:url" content="{Permalink}"/>
+<meta property="og:type" content="article"/>
+  {block:Posts}
+    {block:Photo}
+      <meta property="og:image" content="{PhotoURL-500}"/>
+      {block:Caption}
+        <meta property="og:description" content="{PlaintextCaption}"/>
+      {/block:Caption}
+    {/block:Photo}
+    {block:Photoset}
+      {block:Photos}
+        <meta property="og:image" content="{PhotoURL-500}"/>
+        {block:Caption}
+          <meta property="og:description" content="{PlaintextCaption}"/>
+        {/block:Caption}
+      {/block:Photos}
+      {block:Caption}
+        <meta property="og:description" content="{PlaintextCaption}"/>
+      {/block:Caption}
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Photoset}
+    {block:Text}
+      {block:Title}
+        <meta property="og:title" content="{PlaintextTitle}"/>
+      {/block:Title}
+      <meta property="og:description" content="{PlaintextBody}"/>
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Text}
+    {block:Chat}
+      {block:Title}
+        <meta property="og:title" content="{PlaintextTitle}"/>
+      {/block:Title}
+      <meta property="og:description" content="{block:Lines}{block:Label}{Label} - {/block:Label}{Line}{/block:Lines}"/>
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Chat}
+    {block:Answer}
+      <meta property="og:title" content="{PlaintextQuestion}"/>
+      <meta property="og:description" content="{PlaintextAnswer}"/>
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Answer}
+    {block:Quote}
+      <meta property="og:title" content="{PlaintextQuote}"/>
+      {block:Source}
+        <meta property="og:description" content="{PlaintextSource}"/>
+      {/block:Source}
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Quote}
+    {block:Audio}
+      <meta property="og:title" content="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}{block:Album} - {Album}{/block:Album}"/>
+      {block:Caption}
+        <meta property="og:description" content="{PlaintextCaption}"/>
+      {/block:Caption}
+      {block:AlbumArt}
+        <meta property="og:image" content="{AlbumArtURL}"/>
+      {/block:AlbumArt}
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Audio}
+    {block:Video}
+      {block:Caption}
+        <meta property="og:description" content="{PlaintextCaption}"/>
+      {/block:Caption}
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Video}
+    {block:Link}
+      <meta property="og:title" content="{PlaintextName}{block:Host} - {PlaintextHost}{/block:Host}"/>
+      {block:Description}
+        <meta property="og:description" content="{PlaintextDescription}"/>
+      {/block:Description}
+      <meta property="og:image" content="{PortraitURL-64}"/>
+    {/block:Link}
+  {/block:Posts}
+{/block:PermalinkPage}
+<!--end open graph-->
+<!--start fonts-->
+<link href="http://fonts.googleapis.com/css?family={select:Title font}:800,700,600,400" rel="stylesheet" type="text/css">
+<style type="text/css">
+h1, h2, h3, h4, h5, #logoholder p.text-logo{font-family:'{select:Title font}', Arial, "Helvetica Neue", "Helvetica", Helvetica,  sans-serif; font-weight: 700;}
+.header-font-Roboto h1{font-weight: 900;}
+.header-font-Open.Sans h1, .header-font-Open.Sans #logoholder p.text-logo, .header-font-Open.Sans h2, .header-font-Open.Sans h3, .header-font-Open.Sans h4, .header-font-Open.Sans h5{font-weight: 800;}
+.header-font-Open.Sans #aboutModal h2{font-weight:600;}
+.header-font-asap #aboutModal h2{font-weight:700;}
+.header-font-Signika #aboutModal h2{font-weight:600;}
+.header-font-Lobster.Two h1, .header-font-Lobster.Two h2, .header-font-Lobster.Two h3, .header-font-Lobster.Two h4, .header-font-Lobster.Two h5,.header-font-Lobster.Two  #logoholder p.text-logo{font-style:italic;}
+.header-color{background-color:{color:Header color};}
+.section-holder.image-yes.header-image.page-width .page-width-image{background-image:url({HeaderImage});}
+.section-holder.header-colored.page-width .page-width-image{background-color:{color:Header color};}
+.section-holder.image-yes.header-image.full-screen{background-image:url({HeaderImage});}
+.section-holder.header-colored.full-screen{background-color:{color:Header color};}
+.avatar-border-on {border-color:{TitleColor};}
+body{background-color:{BackgroundColor};}
+{block:IfNotBackgroundImage}
+.secondary-1-bg{background-color:{BackgroundColor};}
+{/block:IfNotBackgroundImage}
+{block:IfBackgroundImage}
+.secondary-1-bg{background-color:transparent;}
+{/block:IfBackgroundImage}
+#logoholder p.text-logo, #logoholder p.text-logo a {color:{TitleColor};}
+#logoholder p.text-logo{-webkit-text-stroke:{TitleColor} .15px;}
+.more_notes_link, .utility-button, .utility-button:hover, .utility-button:focus, .tool:hover, .access a:hover, .pagination li:hover a, .pagination li a:focus, .answer h3, .link h3 {background-color:{AccentColor};}
+.post article h1, #aboutModal h2, h3, .secondary-1-cl, a, .post-container .post article ol li:before, .post-container .post article ul li:before, #aboutModal ol li:before, #aboutModal ul li:before, .highlite-color {color:{AccentColor};}
+.post article h1, #aboutModal h2, h3, .secondary-1-cl {-webkit-text-stroke:{AccentColor} .15px;}
+.post .access-path, .next-path, .previous-path, .post-icon-path,  .general-bullet-text .general-bullet-path, .nav-button a svg{fill:{AccentColor};}
+.utility-button, .more_notes_link{border-color:{AccentColor};}
+.top-bar .toggle-topbar.menu-icon a span.more.icon:after {-webkit-box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor}; -moz-box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor}; box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor};}
+.top-bar-section .has-dropdown > a:after {border-color: transparent transparent transparent {AccentColor};}
+.post blockquote{border-left-color:{AccentColor};}
+@media only screen and (min-width: 42.125em) {
+.narrow #permalink-section .columns .text-post article{-moz-column-count:{select:Custom pages column count};-webkit-column-count:{select:Custom pages column count};column-count:{select:Custom pages column count};}
+}
+@media only screen and (min-width: 48.0628em) {
+.top-bar-section li a:not(.button):hover {border-bottom-color:{AccentColor};}
+.top-bar-section .has-dropdown > a:after {border-color: {AccentColor} transparent transparent transparent;}
+.wide #permalink-section .columns .text-post article{-moz-column-count:{select:Custom pages column count};-webkit-column-count:{select:Custom pages column count};column-count:{select:Custom pages column count};}
+}
+/* reset to stop normal permalink being affected by above */
+#permalink-section .columns.large-12 .text-post article, #permalink-section .columns .text-post article.pages-disqus{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+{block:IfYourEmailAddress}.contact-drop-down{display:list-item;}{/block:IfYourEmailAddress}
+{block:AskEnabled}.contact-drop-down{display:list-item;}{/block:AskEnabled}
+{block:SubmissionsEnabled}.contact-drop-down{display:list-item;}{/block:SubmissionsEnabled}
+</style>
+<!--end adaptive css-->
+<script src="http://static.tumblr.com/wrblogn/Tf8n5tk2r/custom.modernizr.js"></script>
+</head>
+<body class="column-layout-1 header-font-{select:Title font} {select:Page width}">
+<a id="backtotop" name="backtotop"></a>
+<!--start masthead-->
+<section class="section-holder header-color logo-holder {block:ShowHeaderImage}image-yes{/block:ShowHeaderImage} {select:Header style}">
+  <div class="row masthead-row">
+    <div class="large-12 columns" id="logoholder">
+          <div class="page-width-image">
+                {block:ShowHeaderImage}
+                        <p class="image-logo {select:Title style}"><a href="/"><img src="{HeaderImage}" alt="{Title}"/></a></p> 
+                {/block:ShowHeaderImage}       
+                <p class="text-logo word-break {select:Title style} {block:ShowAvatar}text-logo-margin{/block:ShowAvatar} {block:ShowTitle}text-logo-margin{/block:ShowTitle} {block:HideAvatar}no-avatar-padding{/block:HideAvatar} {block:Hidetitle}no-title-padding{/block:HideTitle}">
+                    <a href="/">
+                        {block:ShowAvatar} 
+                            <img src="{PortraitURL-128}" class="logo-avatar {select:Avatar shape} {select:Avatar border}" alt="{Title}"/>
+                        {/block:ShowAvatar}                        
+                        {block:ShowTitle}
+                            {Title}
+                        {/block:ShowTitle}
+                    </a>
+                </p>
+          </div>      
+    </div>
+  </div>
+</section>
+<!--end masthead-->
+<!--srart navigation -->
+<section class="section-holder bottom-shadow contain-to-grid blogitsticky nav-holder">
+  <section class="section-holder white-bg">
+    <div class="row">
+      <div class="large-12 columns">
+        {block:IfShowUpperPagination}
+          {block:IndexPage}
+            {block:Pagination}  
+              <div class="upper-pagination upper-pagination-shadow">
+                <ul>
+                  <li class="arrow nav-button nav-previous">
+                    {block:PreviousPage}
+                      <a href="{PreviousPage}" rel="prev" {block:IfShowHelperToolTips}title="{lang:Newer posts}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}>
+                        <svg class="previous-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                          <path d="M4.983 15l0.001-3.228 14.816 0.001v-3.553h-14.817l0.001-3.22-4.784 5z"  />
+                        </svg>
+                      </a>
+                    {/block:PreviousPage}
+                  </li>         
+                  <li class="arrow nav-button nav-next">
+                    {block:NextPage}
+                      <a href="{NextPage}" rel="next" {block:IfShowHelperToolTips}title="{lang:Older posts}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}>
+                        <svg class="next-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                          <path d="M15.018 15l-0.001-3.228-14.817 0.001v-3.553h14.818l-0.001-3.22 4.783 5z" />
+                        </svg>
+                      </a>
+                    {/block:NextPage}
+                  </li>
+                </ul>
+              </div>
+            {/block:Pagination}
+          {/block:IndexPage}
+          {block:PermalinkPage}
+            {block:PermalinkPagination}
+              <div class="upper-pagination upper-pagination-shadow">
+                <ul>
+                  <li class="arrow nav-button nav-previous">
+                    {block:NextPost}
+                      <a href="{NextPost}" rel="next" {block:IfShowHelperToolTips}title="{lang:Next post}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}>
+                        <svg class="previous-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                          <path d="M4.983 15l0.001-3.228 14.816 0.001v-3.553h-14.817l0.001-3.22-4.784 5z"  />
+                        </svg>
+                      </a>
+                    {/block:NextPost}
+                  </li>         
+                  <li class="arrow nav-button nav-next">
+                    {block:PreviousPost}
+                      <a href="{PreviousPost}" rel="prev" {block:IfShowHelperToolTips}title="{lang:Previous post}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}>
+                        <svg class="next-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                          <path d="M15.018 15l-0.001-3.228-14.817 0.001v-3.553h14.818l-0.001-3.22 4.783 5z" />
+                        </svg>
+                      </a>
+                    {/block:PreviousPost}
+                  </li>
+                </ul>
+              </div>
+            {/block:PermalinkPagination}
+          {/block:PermalinkPage}
+        {/block:IfShowUpperPagination}
+        <nav class="top-bar" data-options="back_text:{lang:Back}">
+          <ul class="title-area">
+            <li class="name"></li>
+            <li id="top-scroller-2" class="toggle-topbar top-scroller nav-button">
+              <a href="#backtotop" {block:English}{block:IfShowHelperToolTips}title="Back to the top" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}{/block:English}>
+                <svg class="backtotop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M11.25 18v-9l3.375 3.375 3.375-3.375-9-9-9 9 3.375 3.375 3.375-3.375v9z"/>
+                </svg>
+              </a>            
+                        </li>
+            <li class="toggle-topbar menu-icon">              
+              <a href="#"><span class="more icon"></span><span class="more">{lang:More}</span><span class="close">{lang:Close}</span></a>           
+                        </li>
+          </ul>
+                  <section class="top-bar-section">           
+            <ul>
+              <li id="top-scroller-1" class="top-scroller nav-button">
+                <a href="#backtotop" {block:English}{block:IfShowHelperToolTips}title="Back to the top" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-bottom"{/block:IfShowHelperToolTips}{/block:English}>
+                  <svg class="backtotop" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                    <path d="M11.25 18v-9l3.375 3.375 3.375-3.375-9-9-9 9 3.375 3.375 3.375-3.375v9z"/>
+                  </svg>
+                </a>
+              </li>
+              <li><a href="/">{lang:Home}</a></li>
+              {block:IfShowAbout}
+                <li class="divider"></li>
+                <li id="aboutlink"><a href="#" data-reveal-id="aboutModal">{lang:About}</a></li>
+              {/block:IfShowAbout}
+              {block:HasPages}
+                <li class="divider"></li>
+                <li class="has-dropdown">
+                  <a class="dropdownind pointer">{block:IfPagesLabel}{text:Pages Label}{/block:IfPagesLabel}{block:IfNotPagesLabel}{lang:Pages}{/block:IfNotPagesLabel}</a>
+                  <ul class="dropdown">
+                    {block:Pages}
+                      <li class="divider"></li>
+                      <li><a href="{URL}">{Label}</a></li>
+                    {/block:Pages}
+                  </ul>
+                </li>               
+                {/block:HasPages}
+                            <li class="divider contact-divider"></li>
+              <li class="has-dropdown contact-drop-down">
+                <a class="dropdownind pointer">{block:English}contact{/block:English}{block:NotEnglish}{lang:Comment}{/block:NotEnglish}</a>
+                <ul class="dropdown">
+                  {block:IfYourEmailAddress}
+                                        <li class="divider"></li>
+                                        <li id="emaillink" class="email-link"><a href="mailto:{text:Your Email Address}" target="_self">{lang:Send email}</a></li>
+                                    {/block:IfYourEmailAddress}
+                                    {block:AskEnabled}
+                                        <li class="divider"></li>
+                                        <li id="asklink" class="ask-link"><a href="{BlogURL}ask/" data-reveal-id="askModal">{AskLabel}</a></li>
+                                    {/block:AskEnabled}
+                                    {block:SubmissionsEnabled}
+                                        <li class="divider"></li>
+                                        <li id="submitlink" class="submit-link"><a href="{BlogURL}submit/" data-reveal-id="submitModal">{SubmitLabel}</a></li>
+                                    {/block:SubmissionsEnabled}
+                </ul>
+              </li>
+              {block:IfShowArchive}
+                <li class="divider"></li>
+                <li><a href="/archive">{lang:Archive}</a></li>
+              {/block:IfShowArchive}
+            </ul>
+          </section>
+        </nav>  
+      </div>
+    </div>
+  </section>
+</section>
+<!-- end navigation -->
+<!-- start main page -->  
+  <section class="section-holder secondary-1-bg" id="{block:IndexPage}post-section{/block:IndexPage}{block:PermalinkPage}permalink-section{/block:PermalinkPage}">
+    <div class="row">
+      <div class="columns {block:Posts}{block:Date}{block:IndexPage}large-12{/block:IndexPage} {block:PermalinkPage}large-12{/block:PermalinkPage}{/block:Date}{/block:Posts}">
+        <div class="post-container">
+                  <div class="flash-holder"></div>
+          {block:Posts}           
+            <div class="post {PostType}-post {block:Photoset}photoset-post{/block:Photoset} clear-fix" id="{PostID}">
+              <div class="white-bg clear-fix lower-drop-shadow">
+                {block:Photo}                                   
+                                    {block:LinkURL}
+                                        <span class="pop-up">
+                                            <a href="{LinkURL}">
+                                    {/block:LinkURL}
+                  <img src="{PhotoURL-500}" alt="{PhotoAlt}" class="post-photo"/>
+                                    {block:LinkURL}
+                                            </a>
+                                        </span> 
+                                    {/block:LinkURL}
+                  <article class="clear-fix">
+                    {block:Caption}
+                      {Caption} 
+                    {/block:Caption}
+                  </article>
+                {/block:Photo}                  
+                {block:Photoset}
+                  {block:Photos}
+                    <div class="photoset-holder">
+                      <div class="photoset-tools">                    
+                        {block:Caption}
+                          <div class="photoset-caption photoset-tool">
+                            <a title="{PlaintextCaption}" data-tooltip class="has-tip tip-top">
+                            </a>
+                          </div>
+                        {/block:Caption}    
+                      </div>                                        
+                      <img src="{PhotoURL-500}" alt="{PhotoAlt}" class="post-photo"/>
+                    </div>
+                  {/block:Photos} 
+                  <article class="clear-fix">
+                    {block:Caption}
+                      {Caption}
+                    {/block:Caption}
+                  </article>
+                {/block:Photoset}               
+                {block:Text}
+                  <article class="clear-fix">               
+                    {block:Title}
+                      <h3 class="secondary-1-cl">{Title}</h3>
+                    {/block:Title}      
+                    {Body}      
+                  </article>
+                                    {block:IfDisqusShortname}
+                                        <article class="clear-fix pages-disqus">    
+                                            <h4 class="clear-column">Disqus</h4>                                  
+                                            <div id="disqus_thread" data-post-id="{PostID}" data-permalink="{Permalink}"></div> 
+                                            <p class="dsq-brlink">
+                                            <strong><a class="hashlink" onClick="loadDisqus('pages');">{lang:View comments}</a></strong></p>
+                                        </article>
+                                    {block:IfDisqusShortname} 
+                {/block:Text}
+                {block:Chat}
+                  <article>               
+                    {block:Title}
+                      <h3 class="secondary-1-cl">                       
+                        {Title}
+                      </h3>
+                    {/block:Title}      
+                    {block:Lines}
+                      <div class="chat-block {alt}">                        
+                        <p class="chat-text">{block:Label}<span class="chat-name strong">{Label}</span><br>{/block:Label} {Line}</p>
+                      </div>
+                    {/block:Lines}
+                  </article>
+                {/block:Chat}             
+                {block:Answer} 
+                  <div class="answer">
+                    <h3>{Question}
+                    <br><span class="small-text pop-up">{lang:Asked by Asker 2}</span></h3>
+                  </div>
+                  <article class="clear-fix caption">               
+                    {block:Answerer}
+                                            {Answer}
+                      <p class="answerer"><span class="pop-up">{Answerer}</span></p>
+                    {/block:Answerer}
+                    {Replies}
+                  </article>
+                {/block:Answer}
+                {block:Quote}
+                  <article class="clear-fix">
+                    <h3>
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="24" viewBox="0 0 22 24">
+                        <path d="M10.286 4.286v9.429q0 1.393-0.542 2.658t-1.467 2.19-2.19 1.467-2.658 0.542h-0.857q-0.348 0-0.603-0.254t-0.254-0.603v-1.714q0-0.348 0.254-0.603t0.603-0.254h0.857q1.42 0 2.424-1.004t1.004-2.424v-0.429q0-0.536-0.375-0.911t-0.911-0.375h-3q-1.071 0-1.821-0.75t-0.75-1.821v-5.143q0-1.071 0.75-1.821t1.821-0.75h5.143q1.071 0 1.821 0.75t0.75 1.821zM22.286 4.286v9.429q0 1.393-0.542 2.658t-1.467 2.19-2.19 1.467-2.658 0.542h-0.857q-0.348 0-0.603-0.254t-0.254-0.603v-1.714q0-0.348 0.254-0.603t0.603-0.254h0.857q1.42 0 2.424-1.004t1.004-2.424v-0.429q0-0.536-0.375-0.911t-0.911-0.375h-3q-1.071 0-1.821-0.75t-0.75-1.821v-5.143q0-1.071 0.75-1.821t1.821-0.75h5.143q1.071 0 1.821 0.75t0.75 1.821z" ll="#C6C6C6" />
+                      </svg>
+                      {Quote}
+                    </h3>
+                    <p>
+                      {block:Source}
+                        {Source}
+                      {/block:Source}
+                    </p>
+                  </article>
+                {/block:Quote}
+                {block:Audio}
+                  <span class="media">
+                    {block:IfShowAudioArtwork}
+                                            {block:AlbumArt}
+                                                <img src="{AlbumArtURL}" alt="{block:Artist}{Artist}{/block:Artist}{block:TrackName} - {TrackName}{/block:TrackName}{block:Album} - {Album}{/block:Album}" class="album-artwork"/>
+                                            {/block:AlbumArt}
+                                        {/block:IfShowAudioArtwork}
+                    {block:AudioEmbed}
+                      {AudioEmbed}
+                    {/block:AudioEmbed}
+                    {block:AudioPlayer}
+                      {AudioPlayerBlack}
+                    {/block:AudioPlayer}
+                  </span>
+                  <article class="clear-fix">                   
+                    {block:IfShowAudioDetails}  
+                      {block:TrackName}
+                        <p class="general-bullet-text">
+                                                  <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                    </svg> <strong>{TrackName}</strong>
+                                                </p>
+                      {/block:TrackName}
+                                            {block:Artist}
+                        <p class="general-bullet-text">
+                                                  <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                    </svg> {Artist}
+                                                </p>
+                      {/block:Artist}                                                                 
+                      {block:Album}
+                        <p class="general-bullet-text">
+                                                  <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                    </svg> {Album}
+                                                </p>
+                      {/block:Album}
+                    {/block:IfShowAudioDetails}                                   
+                    {block:Caption}
+                      {Caption} 
+                    {/block:Caption}
+                  </article>
+                {/block:Audio}
+                {block:video}
+                  <div class="flex-video widescreen">
+                    {Video-700}
+                  </div>
+                  <article class="clear-fix">                                 
+                    {block:Caption}
+                      {Caption} 
+                    {/block:Caption}
+                  </article>
+                {/block:video}
+                {block:link}
+                  <div class="link">
+                    <h3><a href="{URL}" {Target} class="word-break">{Name} 
+                    {block:Host}<br><span class="small-text">{Host}</span>{/block:Host}</a></h3>
+                  </div>
+                  <article>               
+                    {block:Description}
+                      {Description}
+                    {/block:Description}    
+                  </article>
+                {/block:link}
+                                {block:Date} 
+                                    <div class="utilities-holder clear-fix" id="utilities-holder-{PostID}">                 
+                                        <div class="tool-bar clear-fix" data-tool-bar-id="{PostID}" id="tool-bar-{PostID}">
+                                            {block:IndexPage}
+                                            <div class="tool access clear-fix">
+                                                <a data-access-id="{PostID}">
+                                                    <svg class="access-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="26" viewBox="0 0 22 26" >
+                                                        <path d="M6 11.5v3q0 0.625-0.438 1.062t-1.062 0.438h-3q-0.625 0-1.062-0.438t-0.438-1.062v-3q0-0.625 0.438-1.062t1.062-0.438h3q0.625 0 1.062 0.438t0.438 1.062zM14 11.5v3q0 0.625-0.438 1.062t-1.062 0.438h-3q-0.625 0-1.062-0.438t-0.438-1.062v-3q0-0.625 0.438-1.062t1.062-0.438h3q0.625 0 1.062 0.438t0.438 1.062zM22 11.5v3q0 0.625-0.438 1.062t-1.062 0.438h-3q-0.625 0-1.062-0.438t-0.438-1.062v-3q0-0.625 0.438-1.062t1.062-0.438h3q0.625 0 1.062 0.438t0.438 1.062z"  />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            {/block:IndexPage}                    
+                                            <div {block:IfNotShowHelperToolTips}class="tool like tool-bar-inner clear-fix"{/block:IfNotShowHelperToolTips} {block:IfShowHelperToolTips}title="Like post" data-tooltip data-options="disable-for-touch:true" class="tool like tool-bar-inner clear-fix has-tip tip-top"{/block:IfShowHelperToolTips}>
+                                                {LikeButton color="white" size="18"}
+                                            </div>
+                                            <div {block:IfNotShowHelperToolTips}class="tool reblog tool-bar-inner clear-fix"{/block:IfNotShowHelperToolTips} {block:IfShowHelperToolTips}title="Reblog post" data-tooltip data-options="disable-for-touch:true" class="tool like tool-bar-inner clear-fix has-tip tip-top"{/block:IfShowHelperToolTips}>
+                                                {ReblogButton color="white" size="18"}
+                                            </div>                    
+                                            {block:IndexPage}
+                                                <div class="tool notes-lightbox tool-bar-inner clear-fix">
+                                                    <a data-notes-id="{PostID}" data-notes-href="{Permalink}" {block:IfShowHelperToolTips}title="{lang:Share this} + {lang:Notes}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top"{/block:IfShowHelperToolTips}>
+                                                    </a>
+                                                </div>
+                                            {/block:IndexPage}
+                                        </div>
+                                        {block:IndexPage}                   
+                                            <div class="notes-count" id="notes-count-{PostID}">
+                                                <p class="primary-notes"><strong><a href="{Permalink}">{NoteCountWithLabel}</a></strong></p>
+                                            </div>
+                                        {/block:IndexPage}                                                                                        
+                                    </div>
+                                {/block:Date} 
+              </div>
+            </div>
+          {/block:Posts}
+        </div>
+        {block:IndexPage}     
+          {block:Pagination}
+            <div class="pagination-centered">
+              <ul class="pagination">
+                {block:PreviousPage}
+                  <li class="arrow">
+                    <a href="{PreviousPage}" rel="prev" {block:IfShowHelperToolTips}title="{lang:Newer posts}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top"{/block:IfShowHelperToolTips}>
+                      <svg class="previous-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                        <path d="M4.983 15l0.001-3.228 14.816 0.001v-3.553h-14.817l0.001-3.22-4.784 5z"  />
+                      </svg>
+                    </a>
+                  </li>
+                {/block:PreviousPage}
+                  {block:JumpPagination length="5"}
+                    {block:CurrentPage}
+                      <li class="current"><a href="">{PageNumber}</a></li>
+                    {/block:CurrentPage}
+                    {block:JumpPage}
+                      <li><a href="{URL}">{PageNumber}</a></li>
+                    {/block:JumpPage}
+                  {/block:JumpPagination}
+                {block:NextPage}
+                  <li class="arrow">
+                    <a href="{NextPage}" rel="next" {block:IfShowHelperToolTips}title="{lang:Older posts}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top"{/block:IfShowHelperToolTips}>
+                      <svg class="next-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="15" viewBox="0 0 20 15">
+                        <path d="M15.018 15l-0.001-3.228-14.817 0.001v-3.553h14.818l-0.001-3.22 4.783 5z" />
+                      </svg>
+                    </a>
+                  </li>
+                {/block:NextPage}
+              </ul>
+            </div>
+          {/block:Pagination}
+        {/block:IndexPage}
+      </div>
+      {block:Posts}
+        {block:PermalinkPage}
+          {block:Date} 
+            <div class="columns large-12">
+              <div class="permalink-container">
+                <div class="post clear-fix">
+                  <div class="white-bg clear-fix lower-drop-shadow">    
+                    <span id="notes-section">
+                      <article class="padding-bottom-10 clear-fix">
+                        <h4>Notes</h4>                      
+                        {block:RebloggedFrom}
+                                                  <p class="general-bullet-text">
+                                                        <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                            <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                        </svg> {lang:Reblogged from}  - <a href="{ReblogParentURL}" target="_blank">{ReblogParentTitle}</a>
+                                                    </p>
+                                                {/block:RebloggedFrom}      
+                        {block:ContentSource}
+                                                  <p class="general-bullet-text">
+                                                        <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                            <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                        </svg> {lang:Source} -  <a href="{SourceURL}" target="_blank">{SourceTitle}</a>
+                                                    </p>
+                                                {/block:ContentSource}
+                        <p class="general-bullet-text">
+                                                  <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                    </svg> {lang:Posted TimeAgo}
+                                                </p>
+                        <p class="general-bullet-text">
+                                                  <svg class="general-bullet-path" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+                                                        <path d="M6.064 10.753c1.541-1.501 3.852-3.753 3.852-3.753s-2.312-2.251-3.852-3.753c-0.212-0.204-0.498-0.331-0.814-0.331-0.644 0-1.167 0.523-1.167 1.167v5.833c0 0.644 0.523 1.167 1.167 1.167 0.317 0 0.603-0.127 0.814-0.331z" />
+                                                    </svg> <strong>{lang:This post has NoteCount notes}</strong>
+                                                </p>
+                        {block:PostNotes}
+                          {PostNotes-64}
+                          <div id="loading-notes"><img src="http://static.tumblr.com/q6ltvab/UMHn0a0nl/loading.gif" width="48" alt="{lang:Loading}" class="no-scale"></div>
+                          <span id="notes-loading-bottom"></span>
+                        {/block:PostNotes}  
+                      </article>
+                                            <article class="padding-bottom-10 clear-fix">
+                                              <h4>Share</h4>
+                                                <p class="short-url"><strong>{lang:Short URL for this post}: </strong> <span class="word-break">{ShortURL}</span></p>
+                                              <div class="social-sprite pop-up">
+                                                    <a target="_blank" href="https://twitter.com/intent/tweet?url={URLEncodedPermalink}" class="twitter"></a>
+                                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}" class="facebook"></a>
+                                                    <a target="_blank" href="https://plus.google.com/share?url={URLEncodedPermalink}" class="google"></a>
+                                                    {block:Posts}
+                                                        {block:Photo}
+                                                            <a target="_blank" href="http://www.pinterest.com/pin/create/button/?url={URLEncodedPermalink}&media={URLEncodedPhotoURL-500}&description={block:Caption}{PlaintextCaption}{/block:Caption}" class="pinterest"></a>
+                                                        {/block:Photo}
+                                                        {block:Photoset}
+                                                            <a target="_blank" href="http://www.pinterest.com/pin/create/button/?url={URLEncodedPermalink}&{block:Photos}media={URLEncodedPhotoURL-500}&{/block:Photos}description={block:Caption}{PlaintextCaption}{/block:Caption}" class="pinterest"></a>
+                                                        {/block:Photoset}                       
+                                                    {/block:Posts}
+                                                    <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={URLEncodedPermalink}&title={URLEncodedTitle}&summary={PlaintextDescription}&source={URLEncodedPermalink}" class="linkedin"></a>
+                                                    <a target="_blank" href="http://www.addthis.com/bookmark.php?v=300&winname=addthis&pub=xa-4f58c116172635df&source=men-300&lng=en-US&url={URLEncodedPermalink}&title={URLEncodedTitle}&ate=AT-xa-4f58c116172635df/-/-/533c3cb1c4d7e014/3/5333e6116d27422d&frommenu=1&uid=5333" class="addthis"></a>
+                                                 </div>
+                                            </article>
+                                            {block:IfDisqusShortname}
+                                                <article class="padding-bottom-10 clear-fix">
+                                                    <h4>Disqus</h4>                                  
+                                                    <div id="disqus_thread" data-post-id="{PostID}" data-permalink="{Permalink}"></div>                                                   
+                                                    <p class="dsq-brlink">
+                                                  <strong><a class="hashlink" onClick="loadDisqus('permalink');">{lang:View comments}</a></strong></p>
+                                                </article>
+                                            {block:IfDisqusShortname}                                                                                    
+                      {block:HasTags}
+                                                <article class="clear-fix">             
+                          <h4>Tags</h4>
+                          <p class="permalink-tags word-break">
+                            {block:Tags}
+                              <span><a href="{TagURL}">                               
+                                                               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="10" viewBox="0 0 9 10">
+                                                              <path d="M8.75 3.75v-1.25h-1.564l0.313-2.5h-1.25l-0.313 2.5h-2.499l0.313-2.5h-1.25l-0.313 2.5h-2.187v1.25h2.031l-0.312 2.5h-1.719v1.25h1.563l-0.313 2.5h1.25l0.313-2.5h2.499l-0.313 2.5h1.251l0.313-2.5h2.188v-1.25h-2.031l0.311-2.5h1.72zM5.468 6.25h-2.499l0.312-2.5h2.499l-0.312 2.5z" fill="#666666" />
+                                                                </svg>
+                                                                {Tag}
+                              </a></span>
+                            {/block:Tags}
+                          </p>                                              
+                        </article>
+                                            {/block:HasTags}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {/block:Date} 
+        {/block:PermalinkPage}
+      {/block:Posts}
+    </div>
+  </section>    
+<!-- end main page -->
+<!--start utility modals-->
+<div id="notesModal" class="reveal-modal medium close-modal">
+  <div id="notes-html"></div>
+  <div id="notes-message">
+    <h3 class="text-center">{lang:Loading}</h3>
+    <p class="text-center"><img src="http://static.tumblr.com/q6ltvab/UMHn0a0nl/loading.gif" width="48" alt="{lang:Loading}" class="no-scale"></p>
+  </div>
+  <div class="button radius utility-button  margin-top-10">
+    <a href="#" class="scroll-close custom-close-reveal-modal" data-notes-id="">{lang:Close} <span class="svg-icon-inline-sml icon-close"></span></a>
+  </div>  
+  <a class="close-reveal-modal scroll-close" data-notes-id="">&#215;</a>
+</div>
+{block:SubmissionsEnabled}
+  <div id="submitModal" class="reveal-modal large close-modal">
+    <div id="submit-html"></div>
+    <div id="submit-message">
+      <h3 class="text-center">{lang:Loading}</h3>
+      <p class="text-center"><img src="http://static.tumblr.com/q6ltvab/UMHn0a0nl/loading.gif" width="48" alt="{lang:Loading}" class="no-scale"></p>
+    </div>
+    <div class="button radius utility-button custom-close-reveal-modal margin-top-10">
+      <a href="#">{lang:Close} <span class="svg-icon-inline-sml icon-close"></span></a>
+    </div>  
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+{/block:SubmissionsEnabled}
+{block:AskEnabled}
+  <div id="askModal" class="reveal-modal large close-modal">
+    <div id="ask-html"></div>
+    <div id="ask-message">
+      <h3 class="text-center">{lang:Loading}</h3>
+      <p class="text-center"><img src="http://static.tumblr.com/q6ltvab/UMHn0a0nl/loading.gif" width="48" alt="{lang:Loading}" class="no-scale"></p>
+    </div>
+    <div class="button radius utility-button custom-close-reveal-modal margin-top-10">
+      <a href="#" class="ask-close">{lang:Close} <span class="svg-icon-inline-sml icon-close"></span></a>
+    </div>  
+    <a class="close-reveal-modal ask-close">&#215;</a>
+  </div>  
+{/block:AskEnabled}
+<div id="errorModal" class="reveal-modal tiny">
+  {block:English}
+    <h3 class="text-center">Well this is a bit embarrassing</h3>
+    <p class="text-center small-text">It appears that the requested content could not load or is not available anymore, however there's plenty more cool stuff to be found on our <a href="/">home page</a>.</p>
+  {/block:English}
+  {block:NotEnglish}
+    <h3 class="text-center">{lang:Sorry} - 404</h3>
+    <p class="text-center small-text"> <a href="/">{lang:Home}</a>.</p>
+  {/block:NotEnglish}
+  <div class="button radius utility-button custom-close-reveal-modal">
+    <a>{lang:Close} <span class="svg-icon-inline-sml icon-close"></span></a>
+  </div>  
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<div id="loadingModal" class="reveal-modal tiny">
+  <div class="row padding-bottom-10 padding-top-10">
+    <div class="columns large-12">  
+      <h3 class="text-center">{lang:Loading}</h3>
+      <p class="text-center"><img src="http://static.tumblr.com/q6ltvab/UMHn0a0nl/loading.gif" width="48" alt="{lang:Loading}" class="no-scale"></p>
+      {block:English}
+        <p class="text-center small-text">Please wait while we load your content</p>
+      {/block:English}
+    </div>
+  </div>
+</div>
+<div id="aboutModal" class="reveal-modal medium close-modal">
+  {block:IfAboutTagline1}<h1>{text:About Tagline 1}</h1>{/block:IfAboutTagline1}
+  {block:IfAboutTagline2}<h2 class="secondary-1-cl">{text:About Tagline 2}</h2>{/block:IfAboutTagline2}
+    <p>
+        {block:IfShowAboutAvatar}
+            <img src="{PortraitURL-128}" width="64" height="64" class="margin-right-20  margin-bottom-10 padding-top-5 left" alt="{Title}"/> {Description}
+        {block:IfShowAboutAvatar}
+     </p>             
+  <div class="button radius utility-button  custom-close-reveal-modal">
+    <a>{lang:Close} <span class="svg-icon-inline-sml icon-close"></span></a>
+  </div>  
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!--end utility modals-->
+<!--start footer-->
+<footer class="section-holder">
+  {block:IfShowFooter}
+    <section class="section-holder footer-info primary-5-bg">
+      <div class="row"> 
+                {block:IndexPage}
+                    <div class="large-6 medium-6 small-12 columns footer-share-holder">
+                        <h5>{lang:Share this}</h5>
+                        {block:English}
+                            <p>
+                                Dont keep us all to yourself, share!
+                            </p>
+                        {/block:English}
+                        <div class="social-sprite pop-up">
+                            <a href="https://twitter.com/intent/tweet?url={URLEncodedBlogURL}" class="twitter"></a>
+                            <a href="http://www.facebook.com/sharer.php?u={URLEncodedBlogURL}" class="facebook"></a>
+                            <a href="https://plus.google.com/share?url={URLEncodedBlogURL}" class="google"></a>           
+                            <a href="http://www.pinterest.com/pin/create/button/?url={URLEncodedBlogURL}&media={URLEncodedPortraitURL-128}&description={PlaintextDescription}" class="pinterest"></a>      
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url={URLEncodedBlogURL}&title={URLEncodedTitle}&summary={PlaintextDescription}&source={URLEncodedBlogURL}" class="linkedin"></a>
+                            <a href="http://www.addthis.com/bookmark.php?v=300&winname=addthis&pub=xa-4f58c116172635df&source=men-300&lng=en-US&url={URLEncodedBlogURL}&title={URLEncodedTitle}&ate=AT-xa-4f58c116172635df/-/-/533c3cb1c4d7e014/3/5333e6116d27422d&frommenu=1&uid=5333" class="addthis"></a>                 
+                        </div>
+                    </div>
+                {/block:IndexPage}                
+                <div class="{block:IndexPage}large-6 medium-6 small-12{/block:IndexPage}{block:PermalinkPage}large-12 medium-12 small-12{/block:PermalinkPage}   columns footer-follow-holder">
+                    <h5>{lang:Follow me}</h5>
+                    {block:English}
+                        <p>
+                            Follow me on my social networks
+                        </p>
+                    {/block:English}          
+                    <div class="social-sprite pop-up">            
+                        <a class="tumblr" href="http://www.tumblr.com/follow/{Name}"></a>
+                        {block:IfYourTwitterUsername}<a class="twitter" href="https://twitter.com/{text:Your Twitter Username}"></a>{/block:IfYourTwitterUsername}  
+                        {block:IfYourFacebookProfile}<a class="facebook" href="https://www.facebook.com/{text:Your Facebook Profile}"></a>{/block:IfYourFacebookProfile}  
+                        {block:IfYourGooglePlusProfile}<a class="google" href="https://plus.google.com/{text:Your Google Plus Profile}"></a>{/block:IfYourGooglePlusProfile}
+                        {block:IfYourLinkedInProfile}<a class="linkedin" href="http://www.linkedin.com/in/{text:Your Linked In Profile}"></a>{/block:IfYourLinkedInProfile} 
+                        {block:IfYourPinterestProfile}<a class="pinterest" href="http://www.pinterest.com/{text:Your Pinterest Profile}"></a>{/block:IfYourPinterestProfile}      
+                        {block:IfYourInstagramProfile}<a class="instagram" href="http://instagram.com/{text:Your Instagram Profile}"></a>{/block:IfYourInstagramProfile}
+                        {block:IfYourFlickrProfile}<a class="flickr" href="http://www.flickr.com/photos/{text:Your Flickr Profile}"></a>{/block:IfYourFlickrProfile}  
+                        {block:IfYourYoutubeProfile}<a class="youtube" href="http://www.youtube.com/user/{text:Your Youtube Profile}"></a>{/block:IfYourYoutubeProfile}             
+                        {block:IfYourVimeoProfile}<a class="vimeo" href="http://www.vimeo.com/{text:Your Vimeo Profile}"></a>{/block:IfYourVimeoProfile}  
+                        {block:IfYourFoursquareProfile}<a class="foursquare" href="http://foursquare.com/{text:Your Foursquare Profile}"></a>{/block:IfYourFoursquareProfile} 
+                    </div>
+                </div>
+      </div>
+            {block:IfShowFollowing}
+                <div class="row">
+                    <div class="large-12 medium-12 hide-for-small columns footer-following-holder">
+                        <h5>{lang:Following}</h5>       
+                        <p>
+                            {block:Following}
+                                {block:Followed} 
+                                    <a href="{FollowedURL}" target="_blank">
+                                        <img src="{FollowedPortraitURL-40}" title="{FollowedTitle}" alt="{FollowedTitle}" data-tooltip data-options="disable-for-touch:true" class="has-tip tip-top"/>
+                                    </a>
+                                {/block:Followed}
+                            {/block:Following}
+                        </p>
+                    </div>
+                </div>
+            {/block:IfShowFollowing}
+    </section>
+  {/block:IfShowFooter}
+  <section class="section-holder footer-base primary-6-bg">
+    <div class="row">
+      <div class="large-12 columns">
+        <p>
+          <strong>&copy; Copyright 2014 Arnie - <a href="http://www.arnie-design.co.uk/web-design-oxfordshire/" target="_blank" title="Web design Oxfordshire">web design Oxfordshire</a> - <a href="http://blogit-theme.tumblr.com/" target="_blank">Blogit theme</a> - <a href="http://www.tumblr.com/theme/38887" target="_blank">{lang:Install this theme}</a></strong>
+        </p>
+      </div>
+    </div>
+  </section>
+</footer>
+<!--end footer-->
+<script type="text/javascript" src="http://static.tumblr.com/wrblogn/JpWn9y0n7/blogit-lite-1.2.min.js"></script>
+<style>
+{CustomCSS}
+</style>
+{block:IfDisqusShortname}
+<script type="text/javascript">var disqus_shortname = '{text:Disqus shortname}';</script>
+<script type="text/javascript" src="http://static.tumblr.com/wrblogn/qP3n9y0gf/disqus.min.js"></script>
+{block:IfDisqusShortname}
+{block:IfGoogleAnalyticsAccNo}
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '{text:Google Analytics Acc No}', 'auto');
+ga('send', 'pageview');
+</script>
+{/block:IfGoogleAnalyticsAccNo}
+<span class="width480"></span>
+<span class="width768"></span>
+<span class="highlite-color"></span>
+<div class="background-image"><img src="{image:Background}"></div>
+</body>
+</html>
